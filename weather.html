@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>☁️ Weather Prediction</h2>
+<form method="POST" enctype="multipart/form-data">
+    <label for="weather_csv">Upload Weather CSV:</label>
+    <input type="file" name="weather_csv" accept=".csv" required>
+    <button type="submit">Upload & Predict</button>
+
+    <a href="{{ url_for('weather') }}">
+        <button type="button">Reset</button>
+    </a>
+</form>
+
+{% if uploaded %}
+    <p>✅ CSV uploaded successfully!</p>
+    <p><strong>Mean Absolute Error:</strong> {{ mae }}°C</p>
+    <p><strong>Mean Squared Error:</strong> {{ mse }}°C²</p>
+    <img src="{{ url_for('static', filename=plot_filename) }}" alt="Weather Prediction Plot" width="600">
+{% endif %}
+
+{% endblock %}

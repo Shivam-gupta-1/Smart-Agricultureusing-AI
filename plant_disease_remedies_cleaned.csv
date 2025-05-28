@@ -1,0 +1,39 @@
+Disease,Remedy
+Apple___Apple_scab,Use fungicide like captan or myclobutanil
+Apple___Black_rot,Prune infected branches and apply fungicide
+Apple___Cedar_apple_rust,Remove nearby cedar trees and use fungicide
+Apple___healthy,No treatment needed
+Blueberry___healthy,No treatment needed
+Cherry_(including_sour)___Powdery_mildew,Apply sulfur spray or potassium bicarbonate
+Cherry_(including_sour)___healthy,No treatment needed
+Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,Use resistant varieties and crop rotation
+Corn_(maize)___Common_rust_,Apply fungicides like azoxystrobin
+Corn_(maize)___Northern_Leaf_Blight,Use hybrid resistant varieties and fungicide
+Corn_(maize)___healthy,No treatment needed
+Grape___Black_rot,Prune and spray fungicide like myclobutanil
+Grape___Esca_(Black_Measles),Remove infected vines and avoid high nitrogen fertilizers
+Grape___Leaf_blight_(Isariopsis_Leaf_Spot),Apply mancozeb fungicide
+Grape___healthy,No treatment needed
+Orange___Haunglongbing_(Citrus_greening),Remove infected trees and control psyllids
+Peach___Bacterial_spot,Use copper-based fungicide and resistant varieties
+Peach___healthy,No treatment needed
+Pepper_bell___Bacterial_spot,Spray with copper compounds
+Pepper_bell___healthy,No treatment needed
+Potato___Early_blight,Apply fungicides like chlorothalonil
+Potato___Late_blight,Use metalaxyl and destroy infected tubers
+Potato___healthy,No treatment needed
+Raspberry___healthy,No treatment needed
+Soybean___healthy,No treatment needed
+Squash___Powdery_mildew,Use sulfur or neem oil spray
+Strawberry___Leaf_scorch,Apply fungicide and remove infected leaves
+Strawberry___healthy,No treatment needed
+Tomato___Bacterial_spot,Use copper spray and certified seeds
+Tomato___Early_blight,Use fungicide with mancozeb or chlorothalonil
+Tomato___Late_blight,Apply fungicide and avoid overhead watering
+Tomato___Leaf_Mold,Provide ventilation and use copper spray
+Tomato___Septoria_leaf_spot,Remove infected leaves and use fungicide
+Tomato___Spider_mites Two-spotted_spider_mite,Use insecticidal soap or miticide
+Tomato___Target_Spot,Apply fungicide like chlorothalonil
+Tomato___Tomato_Yellow_Leaf_Curl_Virus,Use resistant varieties and control whiteflies
+Tomato___Tomato_mosaic_virus,Remove infected plants and disinfect tools
+Tomato___healthy,No treatment needed

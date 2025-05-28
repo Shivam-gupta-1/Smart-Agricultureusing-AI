@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>🌿 Crop Disease Detection</h2>
+<form method="POST" action="{{ url_for('disease') }}" enctype="multipart/form-data">
+    <label for="leaf_image">Upload Leaf Image:</label>
+    <input type="file" name="leaf_image" accept="image/*" required>
+    <button type="submit">Predict Disease</button>
+    <a href="{{ url_for('disease') }}"><button type="button">Reset</button></a>
+</form>
+
+{% if result %}
+<hr>
+<h3>🧪 Prediction Result</h3>
+<p><strong>Disease:</strong> {{ predicted_class }}</p>
+<p><strong>Confidence:</strong> {{ confidence|round(2) }}%</p>
+<p><strong>Suggested Remedy:</strong> {{ remedy }}</p>
+<img src="{{ url_for('static', filename='test_leaf.jpg') }}" alt="Uploaded Leaf" width="300">
+{% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>☁️ Weather Prediction Results</h2>
+
+<p><strong>📊 Mean Absolute Error (MAE):</strong> {{ mae }}</p>
+<p><strong>📉 Mean Squared Error (MSE):</strong> {{ mse }}</p>
+
+<img src="{{ url_for('static', filename=image_path.split('static/')[-1]) }}"
+     alt="Prediction Plot"
+     style="max-width: 100%; margin: 20px 0; border: 1px solid #ddd; padding: 10px; background-color: #f9f9f9;">
+
+<a href="{{ url_for('weather') }}" style="text-decoration: none;">
+  🔁 Upload Another CSV
+</a>
+{% endblock %}

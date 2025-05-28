@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Agriculture Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .page-container {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 10px;
+      color: #444;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <h1>🌾 Smart Agriculture Dashboard</h1>
+      <nav>
+        <a href="{{ url_for('home') }}">🏠 Home</a>
+        <a href="{{ url_for('irrigation') }}">💧 Irrigation</a>
+        <a href="{{ url_for('weather') }}">☁️ Weather</a>
+        <a href="{{ url_for('disease') }}">🌿 Disease</a>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <p>🚀 Built by B.Tech Final Year | Smart Agriculture AI Project © 2025</p>
+    </footer>
+  </div>
+</body>
+</html>

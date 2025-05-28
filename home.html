@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome to the Smart Agriculture AI System 🌾</h2>
+<p>
+  This AI-powered dashboard is designed to assist farmers in making data-driven decisions. It integrates advanced machine learning models to automate irrigation, predict weather, and detect crop diseases with high accuracy.
+</p>
+
+<hr>
+
+<h3>🚀 Key Features:</h3>
+<ul>
+  <li><strong>💧 Irrigation System:</strong> Predicts whether a selected crop needs watering based on soil moisture and threshold levels.</li>
+  <li><strong>☁️ Weather Forecasting:</strong> Upload weather data to get temperature predictions and accuracy statistics with visual graphs.</li>
+  <li><strong>🌿 Crop Disease Detection:</strong> Upload an image of a leaf to identify diseases and get appropriate remedies.</li>
+</ul>
+
+<hr>
+
+<h3>🔎 Try the Modules:</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 10px;">
+  <div style="flex: 1; min-width: 200px; padding: 15px; border: 1px solid #ccc; border-radius: 10px;">
+    <h4>💧 Moisture & Irrigation</h4>
+    <p>Check irrigation needs based on real crop moisture thresholds.</p>
+    <a href="{{ url_for('irrigation') }}"><button>Go to Irrigation</button></a>
+  </div>
+
+  <div style="flex: 1; min-width: 200px; padding: 15px; border: 1px solid #ccc; border-radius: 10px;">
+    <h4>☁️ Weather Prediction</h4>
+    <p>Upload CSV weather data and visualize forecast with accuracy.</p>
+    <a href="{{ url_for('weather') }}"><button>Go to Weather</button></a>
+  </div>
+
+  <div style="flex: 1; min-width: 200px; padding: 15px; border: 1px solid #ccc; border-radius: 10px;">
+    <h4>🌿 Disease Detection</h4>
+    <p>Upload a leaf image and get disease name + treatment advice.</p>
+    <a href="{{ url_for('disease') }}"><button>Go to Detection</button></a>
+  </div>
+</div>
+
+<hr>
+
+<h4>👨‍🎓 About This Project</h4>
+<p>
+  Developed as a final-year B.Tech prototype, this system demonstrates how AI and agriculture can be integrated for smarter, sustainable farming practices. This dashboard is a simulation and does not require real-time sensors or devices.
+</p>
+{% endblock %}

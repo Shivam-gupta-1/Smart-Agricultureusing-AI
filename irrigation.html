@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>🌱 Irrigation Prediction</h2>
+<form method="POST">
+    <label for="crop">Select Crop:</label>
+    <select name="crop" required>
+        <option value="">-- Choose a Crop --</option>
+        {% for c in crop_list %}
+            <option value="{{ c }}" {% if crop == c %}selected{% endif %}>{{ c }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Check Irrigation Status</button>
+
+    <a href="{{ url_for('irrigation') }}">
+        <button type="button">Reset</button>
+    </a>
+</form>
+
+{% if crop %}
+    <hr>
+    <h3>Crop Selected: {{ crop }}</h3>
+    <p>💧 Moisture Threshold Range: {{ min_moisture }}% - {{ max_moisture }}%</p>
+    <p><strong>Status:</strong> {{ status }}</p>
+    <img src="{{ url_for('static', filename=graph_path) }}" alt="Moisture Graph" width="600">
+{% endif %}
+
+{% endblock %}
